@@ -41,4 +41,5 @@ jobs:
         az aks get-credentials --resource-group Dobby --name Dobbycluster
         kubectl apply -f k8s/deployment.yml
         kubectl apply -f k8s/service.yml
-        #comment
+        # Optional: Check if the pods are running successfully
+        kubectl get pods
